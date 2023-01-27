@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEEKEND</title>
+    <style>
+        .poga{
+            background-color: coral;
+            color: darkorchid;
+            font-size: 30px;
+            width: 200px;
+            height: 70px;
+            cursor: pointer;
+            
+        }
+
+        .poga:hover{
+            background-color: rebeccapurple;
+            color: darkorchid;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Get 10 points to see my fav video</h1>
+
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">My fav video</a>
+
+    <div class="dzonis"></div>
+
+    <h3>Result: <span class="result">0</span></h3>
+    
+    <button class="poga">Add</button>
+    <button class="poga">Minus</button>
+
+    
+</body>
+<script>
+    const button = document.querySelector('.poga')
+    const result = document.querySelector('.result')
+    const musicVideo = document.querySelector('.dzonis')
+
+
+    let number = 0
+
+    button.addEventListener('click',() => {
+        number = number + 1
+        result.innerHTML = number
+        if(number >= 10){
+            musicvideo.innerHTML = `<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">My fav video</a>`
+        }
+
+        minus.addEventListener('click',() =>{
+            window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+
+        })
+
+    })
+
+</script>
+</html>
